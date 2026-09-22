@@ -2,30 +2,22 @@ import { auth, signOut } from "@/auth";
 
 const INFORMES = [
   {
-    ctag: "Deuda Financiera",
-    title: "Control de Deuda",
-    desc: "Deuda del grupo consolidada: créditos vigentes, acreedores y perfil de vencimientos, con el costo promedio ponderado (WACD) y un simulador de escenarios.",
-    tags: ["Créditos", "Acreedores", "Vencimientos", "Simulador"],
-    href: "https://debt-control-rouge.vercel.app/",
-    icon: (
-      <path d="M3 21h18M4 21V10m4 11V10m4 11V10m4 11V10m4 11V10M12 3 3.5 8h17L12 3Z" />
-    ),
-  },
-  {
     ctag: "Cartera de Clientes",
     title: "Cobranza",
-    desc: "Cartera por proyecto y conciliación de ingresos en vivo: recaudación del mes, bandejas por conciliar y Transbank/TOKU — conectado al SaaS Cobranza.",
+    desc: "Cartera por proyecto y conciliación de ingresos en vivo: recaudación del mes, bandejas por conciliar y Transbank/TOKU.",
     tags: ["Por proyecto", "Conciliación", "Recaudación"],
     href: "https://debt-control-rouge.vercel.app/cobranza",
     icon: <path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3Z M9 8h6 M9 12h6" />,
   },
   {
-    ctag: "Caja & Bancos",
-    title: "Tesorería",
-    desc: "Posición de caja consolidada por sociedad, banco y cuenta (fuente Floid), con movimientos bancarios y conciliación automática.",
-    tags: ["Posición de caja", "Movimientos", "Conciliación"],
-    href: "https://debt-control-rouge.vercel.app/tesoreria/posicion-caja",
-    icon: <path d="M3 7h18v12H3zM3 7l3-3h12l3 3M16 13h.01" />,
+    ctag: "Caja, Bancos & Deuda",
+    title: "Tesorería y Control de Deuda",
+    desc: "Posición de caja por sociedad y conciliación bancaria, junto con la deuda financiera del grupo: créditos, acreedores, perfil de vencimientos y costo promedio ponderado (WACD).",
+    tags: ["Posición de caja", "Movimientos", "Créditos", "Acreedores", "Vencimientos"],
+    href: "https://debt-control-rouge.vercel.app/",
+    icon: (
+      <path d="M3 21h18M4 21V10m4 11V10m4 11V10m4 11V10m4 11V10M12 3 3.5 8h17L12 3Z" />
+    ),
   },
 ];
 
@@ -78,8 +70,7 @@ export default async function Home() {
         <p className="eyebrow">Portal de Informes</p>
         <h1>Elige un informe</h1>
         <p className="lead">
-          Tres tableros del área financiera de Trei, cada uno en su propio
-          espacio. Selecciona a cuál entrar.
+          Los tableros del área financiera de Trei. Selecciona a cuál entrar.
         </p>
 
         <section className="grid">

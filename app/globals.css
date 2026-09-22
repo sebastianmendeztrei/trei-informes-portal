@@ -81,9 +81,10 @@ h1{
 /* ---------- Grilla de informes ---------- */
 .grid{
   margin-top:clamp(28px,4vw,44px);
-  display:grid;gap:18px;grid-template-columns:repeat(3,1fr);
+  display:grid;gap:18px;grid-template-columns:repeat(2,1fr);
+  max-width:760px;
 }
-@media(max-width:860px){.grid{grid-template-columns:1fr;max-width:520px}}
+@media(max-width:720px){.grid{grid-template-columns:1fr;max-width:520px}}
 
 .card{
   position:relative;display:flex;flex-direction:column;
