@@ -6,7 +6,7 @@ const INFORMES = [
     title: "Cobranza",
     desc: "Cartera por proyecto y conciliación de ingresos en vivo: recaudación del mes, bandejas por conciliar y Transbank/TOKU.",
     tags: ["Por proyecto", "Conciliación", "Recaudación"],
-    href: "https://debt-control-rouge.vercel.app/cobranza",
+    href: "https://cobranza-trei.vercel.app/cobranza",
     icon: <path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3Z M9 8h6 M9 12h6" />,
   },
   {
@@ -14,7 +14,7 @@ const INFORMES = [
     title: "Tesorería y Control de Deuda",
     desc: "Posición de caja por sociedad y conciliación bancaria, junto con la deuda financiera del grupo: créditos, acreedores, perfil de vencimientos y costo promedio ponderado (WACD).",
     tags: ["Posición de caja", "Movimientos", "Créditos", "Acreedores", "Vencimientos"],
-    href: "https://debt-control-rouge.vercel.app/",
+    href: "https://tesoreria-trei.vercel.app/",
     icon: (
       <path d="M3 21h18M4 21V10m4 11V10m4 11V10m4 11V10m4 11V10M12 3 3.5 8h17L12 3Z" />
     ),
